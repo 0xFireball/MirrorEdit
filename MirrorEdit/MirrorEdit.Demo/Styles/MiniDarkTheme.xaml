@@ -1,0 +1,22 @@
+﻿<Styles xmlns="https://github.com/avaloniaui">
+  <!--A mini dark theme that doesn't cover all the controls.-->
+  <Style Selector="ContentControl">
+    <Setter Property="Background" Value="#FF353535" />
+    <Setter Property="Foreground" Value="#FFFEFEFE" />
+  </Style>
+  <Style Selector="TextBox">
+    <Setter Property="Foreground" Value="#FFFEFEFE" />
+  </Style>
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="#FFFEFEFE" />
+  </Style>
+  <Style Selector="Menu">
+    <Setter Property="Foreground" Value="#FFFEFEFE" />
+  </Style>
+  <Style Selector="Button">
+    <Setter Property="Background" Value="#FF222222" />
+  </Style>
+  <Style Selector="Window">
+    <Setter Property="Background" Value="#FF252525" />
+  </Style>
+</Styles>

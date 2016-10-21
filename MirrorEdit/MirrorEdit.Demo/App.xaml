@@ -1,9 +1,10 @@
 ﻿<Application xmlns="https://github.com/avaloniaui">
   <Application.Styles>
     <StyleInclude Source="resm:Avalonia.Themes.Default.DefaultTheme.xaml?assembly=Avalonia.Themes.Default" />
-    <StyleInclude Source="resm:Avalonia.Themes.Default.Accents.BaseLight.xaml?assembly=Avalonia.Themes.Default" />
 
     <StyleInclude Source="resm:MirrorEdit.Demo.Controls.CoolWindow.xaml?assembly=MirrorEdit.Demo" />
     <StyleInclude Source="resm:MirrorEdit.Demo.Styles.BaseDark.xaml?assembly=MirrorEdit.Demo" />
+
+    <StyleInclude Source="resm:MirrorEdit.Demo.Styles.MiniDarkTheme.xaml?assembly=MirrorEdit.Demo" />
   </Application.Styles>
 </Application>
