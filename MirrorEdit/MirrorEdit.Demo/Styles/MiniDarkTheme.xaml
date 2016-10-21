@@ -1,7 +1,11 @@
-﻿<Styles xmlns="https://github.com/avaloniaui">
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:Controls="clr-namespace:MirrorEdit.Demo.Controls;assembly=MirrorEdit.Demo">
   <!--A mini dark theme that doesn't cover all the controls.-->
   <Style Selector="ContentControl">
     <Setter Property="Background" Value="#FF353535" />
+    <Setter Property="Foreground" Value="#FFFEFEFE" />
+  </Style>
+  <Style Selector="Controls|CoolWindow">
     <Setter Property="Foreground" Value="#FFFEFEFE" />
   </Style>
   <Style Selector="TextBox">
