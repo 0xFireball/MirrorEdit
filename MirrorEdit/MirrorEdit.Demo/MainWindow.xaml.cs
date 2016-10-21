@@ -1,9 +1,9 @@
-﻿using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Markup.Xaml;
+using MirrorEdit.Demo.Controls;
 
 namespace MirrorEdit.Demo
 {
-    public class MainWindow : Window
+    public class MainWindow : CoolWindow
     {
         public MainWindow()
         {
