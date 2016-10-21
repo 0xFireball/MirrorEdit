@@ -169,6 +169,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CoolWindow.cs" />
+    <Compile Include="Util\GeneralUtil.cs" />
     <EmbeddedResource Include="App.xaml" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -187,6 +189,11 @@
       <Project>{94a72bd0-b23d-4242-bd74-b0c28d041689}</Project>
       <Name>MirrorEdit</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CoolWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
