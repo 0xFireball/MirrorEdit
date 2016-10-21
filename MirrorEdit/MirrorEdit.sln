@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorEdit", "MirrorEdit\MirrorEdit.csproj", "{94A72BD0-B23D-4242-BD74-B0C28D041689}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{44BE2E31-EF33-487B-ABF9-B6824717A441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorEdit.Demo", "MirrorEdit.Demo\MirrorEdit.Demo.csproj", "{AF8E182F-6AFF-4601-B182-F7D343E71663}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{94A72BD0-B23D-4242-BD74-B0C28D041689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A72BD0-B23D-4242-BD74-B0C28D041689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A72BD0-B23D-4242-BD74-B0C28D041689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8E182F-6AFF-4601-B182-F7D343E71663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8E182F-6AFF-4601-B182-F7D343E71663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8E182F-6AFF-4601-B182-F7D343E71663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8E182F-6AFF-4601-B182-F7D343E71663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF8E182F-6AFF-4601-B182-F7D343E71663} = {44BE2E31-EF33-487B-ABF9-B6824717A441}
 	EndGlobalSection
 EndGlobal
