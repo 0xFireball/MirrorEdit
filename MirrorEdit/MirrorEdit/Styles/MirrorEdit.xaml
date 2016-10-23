@@ -1,11 +1,12 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:local="clr-namespace:MirrorEdit;assembly=MirrorEdit">
   <Style Selector="local|MirrorEditor">
-    <Setter Property="AcceptsReturn" Value="true" />
-    <Setter Property="AcceptsTab" Value="true" />
+    <Setter Property="AcceptsReturn" Value="false" />
+    <Setter Property="AcceptsTab" Value="false" />
     <Setter Property="FontFamily" Value="Courier New" />
     <Setter Property="Background" Value="{StyleResource ThemeControlDarkBrush}" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Padding" Value="4" />
+    <Setter Property="TabSize" Value="4" />
     <Setter Property="Template">
       <ControlTemplate>
         <Border Name="border"
