@@ -1,15 +1,16 @@
 ﻿using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
+using Avalonia.Media;
 using Avalonia.Styling;
+using MirrorEdit.Controls;
 using MirrorEdit.Util;
 using System;
 using System.Linq;
 
 namespace MirrorEdit
 {
-    public class MirrorEditor : TextBox, IStyleable
+    public class MirrorEditor : METextBox, IStyleable
     {
         private TimedRunner colorizerWorker;
         private ColorizerService colorizer;
@@ -111,6 +112,11 @@ namespace MirrorEdit
             //
 
             base.OnTemplateApplied(e);
+        }
+
+        public override void Render(DrawingContext context)
+        {
+            base.Render(context);
         }
     }
 }

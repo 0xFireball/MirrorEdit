@@ -1,4 +1,7 @@
-﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:local="clr-namespace:MirrorEdit;assembly=MirrorEdit">
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:MirrorEdit;assembly=MirrorEdit"
+        xmlns:presenters="clr-namespace:MirrorEdit.Presenters;assembly=MirrorEdit">
+
   <Style Selector="local|MirrorEditor">
     <Setter Property="AcceptsReturn" Value="false" />
     <Setter Property="AcceptsTab" Value="false" />
@@ -48,7 +51,7 @@
                              Opacity="0.5"
                              Text="{TemplateBinding Watermark}"
                              IsVisible="{TemplateBinding Path=Text, Converter={Static StringConverters.NullOrEmpty}}" />
-                  <TextPresenter Name="PART_TextPresenter"
+                  <presenters:METextPresenter Name="PART_METextPresenter"
                                  CaretIndex="{TemplateBinding CaretIndex}"
                                  SelectionStart="{TemplateBinding SelectionStart}"
                                  SelectionEnd="{TemplateBinding SelectionEnd}"
