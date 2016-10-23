@@ -26,21 +26,34 @@ namespace MirrorEdit
             switch (e.Key)
             {
                 case Key.Tab:
-                    e.Handled = true;
-                    //Insert tab
-                    Text = Text?.Insert(CaretIndex, new string(' ', TabSize));
-                    if (Text == null) //In case the control was new
+                    e.Handled = true; //prevent losing focus
+                    if (e.Modifiers == InputModifiers.Shift)
                     {
-                        Text = new string(' ', TabSize);
+                        if (Text == null || Text.Length < TabSize)
+                        {
+                            break;
+                        }
+                        //Remove tab
+                        CaretIndex -= TabSize; //Go back [tabsize] characters
+                        //Eat the [tabsize] characters after
+                        Text = Text.Remove(CaretIndex, TabSize);
                     }
-                    CaretIndex += TabSize;
-                    e.Handled = true;
+                    else
+                    {
+                        //Insert tab
+                        Text = Text?.Insert(CaretIndex, new string(' ', TabSize));
+                        if (Text == null) //In case the control was new
+                        {
+                            Text = new string(' ', TabSize);
+                        }
+                        CaretIndex += TabSize;
+                    }
                     break;
 
                 case Key.Enter:
                     //Restore indentation
                     //Read previous indent
-                    var lines = Text?.Split('\n').Select(s=>s+="\n").ToArray(); //Re-add the split newline
+                    var lines = Text?.Split('\n').Select(s => s += "\n").ToArray(); //Re-add the split newline
                     int previousIndent = 0;
                     if (lines == null)
                     {
