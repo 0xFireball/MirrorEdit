@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
 using Avalonia.Styling;
+using MirrorEdit.Util;
 using System;
 using System.Linq;
 
@@ -10,6 +11,16 @@ namespace MirrorEdit
 {
     public class MirrorEditor : TextBox, IStyleable
     {
+        private TimedRunner colorizerWorker;
+        private ColorizerService colorizer;
+
+        public MirrorEditor()
+        {
+            colorizer = new ColorizerService(this);
+            //TODO: Use a property
+            colorizerWorker = new TimedRunner(1000, colorizer.Run);
+        }
+
         public static readonly AvaloniaProperty<int> TabSizeProperty =
             AvaloniaProperty.Register<MirrorEditor, int>(nameof(TabSize));
 
