@@ -118,6 +118,8 @@ namespace MirrorEdit.Controls
             _undoRedoHelper = new UndoRedoHelper<UndoRedoState>(this);
         }
 
+        public METextPresenter Presenter => _presenter;
+
         public bool AcceptsReturn
         {
             get { return GetValue(AcceptsReturnProperty); }
