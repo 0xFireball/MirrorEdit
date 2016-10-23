@@ -5,7 +5,7 @@ namespace MirrorEdit.Colorizers
     public interface IColorizer
     {
         int StartIndex { get; }
-        int StopIndex { get; }
+        int EndIndex { get; }
         Color Color { get; }
     }
 }

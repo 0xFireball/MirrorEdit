@@ -1,5 +1,4 @@
 ﻿using MirrorEdit.Colorizers;
-using System;
 using System.Collections.Generic;
 
 namespace MirrorEdit
@@ -25,7 +24,8 @@ namespace MirrorEdit
 
         private void ApplyColorizer(IColorizer colorizer)
         {
-            throw new NotImplementedException();
+            mirrorEditor.SelectionStart = colorizer.StartIndex;
+            mirrorEditor.SelectionEnd = colorizer.EndIndex;
         }
     }
 }
