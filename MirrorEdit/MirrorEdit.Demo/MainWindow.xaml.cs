@@ -1,9 +1,9 @@
-﻿using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Markup.Xaml;
+using nkyUI.Controls;
 
 namespace MirrorEdit.Demo
 {
-    public class MainWindow : Window
+    public class MainWindow : KYUIWindow
     {
         public MainWindow()
         {

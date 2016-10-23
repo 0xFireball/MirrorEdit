@@ -1,10 +1,11 @@
-﻿<Controls:CoolWindow xmlns="https://github.com/avaloniaui"
+﻿<kControls:KYUIWindow xmlns="https://github.com/avaloniaui"
                      xmlns:mirrorEdit="clr-namespace:MirrorEdit;assembly=MirrorEdit"
+                     xmlns:kControls="clr-namespace:nkyUI.Controls;assembly=nkyUI"
                      MinWidth="500"
                      MinHeight="300"
                      Title="MirrorEdit Demo"
                      xmlns:Controls="clr-namespace:MirrorEdit.Demo.Controls;assembly=MirrorEdit.Demo">
-  <Grid Margin="20">
-    <mirrorEdit:MirrorEditor />
-  </Grid>
-</Controls:CoolWindow>
+    <Grid Margin="20">
+        <mirrorEdit:MirrorEditor />
+    </Grid>
+</kControls:KYUIWindow>

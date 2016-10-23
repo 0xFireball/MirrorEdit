@@ -2,9 +2,10 @@
   <Application.Styles>
     <StyleInclude Source="resm:Avalonia.Themes.Default.DefaultTheme.xaml?assembly=Avalonia.Themes.Default" />
 
-    <StyleInclude Source="resm:MirrorEdit.Demo.Controls.CoolWindow.xaml?assembly=MirrorEdit.Demo" />
-    <StyleInclude Source="resm:MirrorEdit.Demo.Styles.BaseDark.xaml?assembly=MirrorEdit.Demo" />
+    <StyleInclude Source="resm:nkyUI.Themes.BaseDark.xaml?assembly=nkyUI" />
+    <StyleInclude Source="resm:nkyUI.Themes.Accents.Red.xaml?assembly=nkyUI" />
+    <StyleInclude Source="resm:nkyUI.Styles.Controls.xaml?assembly=nkyUI" />
 
-    <StyleInclude Source="resm:MirrorEdit.Demo.Styles.MiniDarkTheme.xaml?assembly=MirrorEdit.Demo" />
+    <StyleInclude Source="resm:MirrorEdit.Styles.MirrorEdit.xaml?assembly=MirrorEdit" />
   </Application.Styles>
 </Application>
