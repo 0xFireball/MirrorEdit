@@ -55,17 +55,17 @@ namespace MirrorEdit.Controls
                 (o, v) => o.SelectionEnd = v);
 
         public static readonly DirectProperty<METextBox, string> TextProperty =
-            TextBlock.TextProperty.AddOwner<METextBox>(
+            METextBlock.TextProperty.AddOwner<METextBox>(
                 o => o.Text,
                 (o, v) => o.Text = v,
                 defaultBindingMode: BindingMode.TwoWay,
                 enableDataValidation: true);
 
         public static readonly StyledProperty<TextAlignment> TextAlignmentProperty =
-            TextBlock.TextAlignmentProperty.AddOwner<METextBox>();
+            METextBlock.TextAlignmentProperty.AddOwner<METextBox>();
 
         public static readonly StyledProperty<TextWrapping> TextWrappingProperty =
-            TextBlock.TextWrappingProperty.AddOwner<METextBox>();
+            METextBlock.TextWrappingProperty.AddOwner<METextBox>();
 
         public static readonly StyledProperty<string> WatermarkProperty =
             AvaloniaProperty.Register<METextBox, string>("Watermark");

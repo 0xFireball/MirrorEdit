@@ -8,7 +8,7 @@
     <Setter Property="AcceptsTab" Value="false" />
     <Setter Property="FontFamily" Value="Courier New" />
     <Setter Property="Background" Value="{StyleResource ThemeControlDarkBrush}" />
-    <Setter Property="Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrush}" />
+    <Setter Property="Foreground" Value="{StyleResource ThemeForegroundBrightBrush}" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Padding" Value="4" />
     <Setter Property="TabSize" Value="4" />
@@ -57,6 +57,7 @@
                                  CaretIndex="{TemplateBinding CaretIndex}"
                                  SelectionStart="{TemplateBinding SelectionStart}"
                                  SelectionEnd="{TemplateBinding SelectionEnd}"
+                                 Foreground="{TemplateBinding Foreground}"
                                  Text="{TemplateBinding Text, Mode=TwoWay}"
                                  TextAlignment="{TemplateBinding TextAlignment}"
                                  FontFamily="{TemplateBinding FontFamily}"
