@@ -8,6 +8,7 @@
     <Setter Property="AcceptsTab" Value="false" />
     <Setter Property="FontFamily" Value="Courier New" />
     <Setter Property="Background" Value="{StyleResource ThemeControlDarkBrush}" />
+    <Setter Property="Foreground" Value="{StyleResource AccentBaseColorInverseNeutralBrush}" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Padding" Value="4" />
     <Setter Property="TabSize" Value="4" />
@@ -20,7 +21,7 @@
           <DockPanel Margin="{TemplateBinding Padding}">
 
             <controls:METextBlock Name="floatingWatermark"
-                       Foreground="{StyleResource ThemeAccentBrush}"
+                       Foreground="{TemplateBinding Foreground}"
                        FontSize="{StyleResource FontSizeSmall}"
                        Text="{TemplateBinding Watermark}"
                        DockPanel.Dock="Top">
