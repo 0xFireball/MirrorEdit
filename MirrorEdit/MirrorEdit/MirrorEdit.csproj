@@ -169,6 +169,7 @@
   <ItemGroup>
     <Compile Include="ColorizerService.cs" />
     <Compile Include="Colorizers\IColorizer.cs" />
+    <Compile Include="Controls\METextBlock.cs" />
     <Compile Include="Controls\METextBox.cs" />
     <Compile Include="Controls\Utils\UndoRedoHelper.cs" />
     <Compile Include="MirrorEditor.cs" />
@@ -186,7 +187,11 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Styles\METextBlock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

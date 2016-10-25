@@ -1,0 +1,4 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:MirrorEdit;assembly=MirrorEdit"
+        xmlns:presenters="clr-namespace:MirrorEdit.Presenters;assembly=MirrorEdit">
+</Styles>

@@ -1,5 +1,6 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui"
         xmlns:local="clr-namespace:MirrorEdit;assembly=MirrorEdit"
+        xmlns:controls="clr-namespace:MirrorEdit.Controls;assembly=MirrorEdit"
         xmlns:presenters="clr-namespace:MirrorEdit.Presenters;assembly=MirrorEdit">
 
   <Style Selector="local|MirrorEditor">
@@ -18,12 +19,12 @@
                 BorderThickness="{TemplateBinding BorderThickness}">
           <DockPanel Margin="{TemplateBinding Padding}">
 
-            <TextBlock Name="floatingWatermark"
+            <controls:METextBlock Name="floatingWatermark"
                        Foreground="{StyleResource ThemeAccentBrush}"
                        FontSize="{StyleResource FontSizeSmall}"
                        Text="{TemplateBinding Watermark}"
                        DockPanel.Dock="Top">
-              <TextBlock.IsVisible>
+              <controls:METextBlock.IsVisible>
                 <MultiBinding Converter="{Static BoolConverters.And}">
                   <Binding RelativeSource="{RelativeSource TemplatedParent}"
                            Path="UseFloatingWatermark" />
@@ -31,8 +32,8 @@
                            Path="Text"
                            Converter="{Static StringConverters.NotNullOrEmpty}" />
                 </MultiBinding>
-              </TextBlock.IsVisible>
-            </TextBlock>
+              </controls:METextBlock.IsVisible>
+            </controls:METextBlock>
 
             <DockPanel LastChildFill="True">
               <Canvas Name="error" DockPanel.Dock="Right" Width="14" Height="14" Margin="4 0 1 0">

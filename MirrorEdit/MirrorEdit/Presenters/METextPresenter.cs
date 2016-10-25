@@ -4,12 +4,13 @@ using Avalonia.Media;
 using Avalonia.Styling;
 using Avalonia.Threading;
 using Avalonia.VisualTree;
+using MirrorEdit.Controls;
 using System;
 using System.Reactive.Linq;
 
 namespace MirrorEdit.Presenters
 {
-    public class METextPresenter : TextBlock
+    public class METextPresenter : METextBlock
     {
         public static readonly DirectProperty<METextPresenter, int> CaretIndexProperty =
             TextBox.CaretIndexProperty.AddOwner<METextPresenter>(
